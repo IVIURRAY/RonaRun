@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class Enemey : MonoBehaviour
 {
-	public VisualEffect vfx;
+	// public VisualEffect vfx;
 	public float wanderRadius;
 	public float wanderTimer;
 	private bool isVFXPlaying = false;
@@ -20,19 +20,13 @@ public class Enemey : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-		{
-			vfx.Play();
-		}
+        //if (Input.GetKey(KeyCode.Space))
+		//	vfx.Play();
 
-		if (isVFXPlaying)
-		{
-			vfx.Play();
-		}
-		else
-		{
-			vfx.pause = true;
-		}
+		//if (isVFXPlaying)
+		//	vfx.Play();
+		//else
+		//	vfx.pause = true;
 
 		WalkAroundShop();
     }
